@@ -2,9 +2,9 @@
 /**
  * app.js
  * @Autor  王朝
- * @Description 
+ * @Description
  * @Created 2019-08-26 11:00:41
- * @LastModified 2019-08-26 11:58:59
+ * @LastModified 2019-11-12 11:58:59
  * @EnterpriseEmail wangchao04@iyunxiao.com
  */
 const mongodbUtil = require('./utils/mongodber');
@@ -18,9 +18,9 @@ async function main() {
     await mongodbUtil.init();
     const mongodber = mongodbUtil.use('test');
     logger.info('开启世界的大门...');
- 
+
     test();
-    
+
     //初始化web服务
     initRoute(app);
     app.listen('8081');
