@@ -165,3 +165,18 @@ const aaax =[1,2,3,4,5];
 const bbbx =[2,4,6,8,10,12]
 const cccx = _.filter(bbbx,id => aaax.indexOf(id) <0 );
 console.log(cccx)
+
+const cache = {
+    updateTime: new Date(),
+    cache: [],
+}
+cache.cache.push("dafads");
+console.log(cache.cache);
+
+const aasx = [];
+aasx.push("sss");
+console.log(aasx);
+
+const aasx = "dafsdas";
+aasx = "dasdad";
+console.log(aasx);
