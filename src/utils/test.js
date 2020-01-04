@@ -119,3 +119,49 @@ _.each(onj, item => {
 });
 console.log(ret);
 //test - 11 - 22
+const { ObjectId } = require('mongodb').ObjectID;
+const ddd = [
+    { id: '5df9eaab0000c3c566209580', name: '规划课时包' },
+    { id: '5df9eaab0000c3c566209581', name: '规划课时包121' }
+]
+const dds = _.map(ddd, 'id');
+console.log(dds);
+const ret11 = _.groupBy([],'11');
+let now = 'fasdfas sdfasfasdf3241234e sfad';
+now = now.replace(' ', '')
+now = now.replace(' ', '')
+const moment = require('moment')
+console.log(createOrderNo());
+
+
+function createOrderNo() {
+    let sixRandom = '';
+    for (let i = 0; i < 6; i++) {
+        sixRandom += Math.floor(Math.random() * 10);
+    }
+    const prefix = moment().format('YYYYMMDD-');
+    return 'OW' + prefix + sixRandom;
+}
+async function asy(){
+    return new Promise((resolve, reject) =>{
+        console.log('1212');
+    });
+}
+// ddd.forEach(item => {
+//     console.log(item.id);
+//     await asy()
+// })
+
+
+let obj = {}
+let cc = undefined;
+obj.aa = cc || 0;
+cc = null;
+obj.bb = cc || 11;
+console.log(obj)
+
+
+const aaax =[1,2,3,4,5];
+const bbbx =[2,4,6,8,10,12]
+const cccx = _.filter(bbbx,id => aaax.indexOf(id) <0 );
+console.log(cccx)
