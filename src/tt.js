@@ -2,7 +2,7 @@
  * @Author: wangchao 
  * @Date: 2020-01-04 11:47:44 
  * @Last Modified by: wangchao
- * @Last Modified time: 2020-01-19 17:05:02
+ * @Last Modified time: 2020-03-04 09:55:55
  */
 
 console.log('test')
@@ -36,3 +36,5 @@ const TestEnum = {
 _.map(TestEnum, (k, v) => {
     console.log(k, v)
 })
+
+console.log('this branch is fixBug2')
