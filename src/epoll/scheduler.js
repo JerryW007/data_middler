@@ -12,6 +12,12 @@ class Scheduler {
     constructor(){
         this.TotalThreadNumber = 10; //总的线程数        
         this.Offset = 0; //记录拉取数据的位置
+        this.syncData = await this.getSyncData();
+    }
+    async getSyncData() {
+        setTimeout(() => {
+            return '异步值1111';
+        }, 10 * 1000);
     }
 }
 

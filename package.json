@@ -3,16 +3,17 @@
     "version": "0.0.1",
     "description": "将mongodb的数据对应转存到ES中,便于搜索",
     "autor": "kb <kb@iyunxiao.com>",
-    "private": false,
+    "private": false,  
     "scripts": {
-        "dev": "node NODE_ENV=development app.js",
-        "product": "node NODE_ENV=product app.js"
+        "dev": "graphpack",
+        "build": "graphpack build"
     },
     "dependencies": {
         "jshint": "^2.10.2"
     },
     "devDependencies": {
         "express": "^4.17.1",
+        "graphpack": "^1.0.9",
         "log4js": "^5.1.0",
         "moment": "^2.24.0",
         "mongodb": "^3.3.1",
