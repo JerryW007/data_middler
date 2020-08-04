@@ -7,4 +7,8 @@ console.log("commit 1")
 
 
 
+<<<<<<< HEAD
 console.log("commit4");
+=======
+console.log("commit4");
+>>>>>>> 92211e016e1322ec31b1baedf988541498b556bc
